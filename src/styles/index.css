@@ -1,11 +1,80 @@
-/* 
+.title{
+    color: rgb(175, 173, 173);
+    font-size: 100px;
+    font-weight: 10;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.cards{
+    background-color: white;
+    width: 500px;
+    border-inline: 1px solid rgb(175, 173, 173, 0.5);
+    border-top: 1px solid rgb(175, 173, 173, 0.5);
+    position: relative;
+    box-shadow:
+        0 1px 1px rgb(175, 173, 173, 0.5),
+        0 8px 0 -3px #f6f6f6,
+        0 9px 1px -3px rgb(175, 173, 173, 0.5),
+        0 16px 0 -6px #f6f6f6,
+        0 17px 2px -6px rgb(175, 173, 173, 0.5);
+}
+.borderDivs{
+    border: 2px solid rgb(175, 173, 173);
+    border-top: none;
+    background-color: white;
+    width: 495px;
+}
 
-*/
+.inputToDo{
+    border: none;
+    outline: none;
+    background-color: white;
+    text-align: center;
+    margin: 20px;
+    color: rgb(175, 173, 173);
+}
+
+.inputToDo::placeholder{
+    color: rgb(175, 173, 173);
+    font-size: large;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.toDosDiv{
+    border-bottom:1px solid rgb(175, 173, 173);
+    background-color: white;
+    color: rgb(175, 173, 173);
+    font-size: 40;
+}
+
+.deleteBtn{
+    border: none;
+    background-color: none;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.deleteBtn:hover{
+    color:red;
+}
+
+.toDosDiv:hover{
+    color: black;
+    background-color: rgb(235, 235, 235);
+    transition: 0.2s ease;
+}
+
+.toDosDiv:hover .deleteBtn {
+  opacity: 1;
+  background-color: rgb(235, 235, 235);
+}
+
+.sinToDos{
+    border-bottom:none;
+    background-color: white;
+    color: rgb(175, 173, 173);
+    font-size: 40;
+}
